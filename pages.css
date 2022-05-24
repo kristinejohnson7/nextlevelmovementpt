@@ -1,0 +1,25 @@
+.good-faith-container {
+  margin-top: 200px;
+  margin-bottom: 130px;
+  text-align: center;
+  line-height: 2;
+  padding: 15px;
+}
+
+.good-faith-container .good-faith-list {
+  text-align: left;
+}
+
+.good-faith-container h2 {
+  margin-bottom: 23px;
+}
+
+.good-faith-container p {
+  margin-bottom: 10px;
+}
+
+.good-faith-container ul {
+  margin-left: 50px;
+  margin-bottom: 7px;
+  list-style: initial;
+}

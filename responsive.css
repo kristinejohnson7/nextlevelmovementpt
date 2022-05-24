@@ -1,0 +1,416 @@
+@media (min-width: 1800px) {
+  .container-hero {max-width: 1400px}
+}
+
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+@media (max-width: 1250px) {
+
+  .intro-text-pic-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .service-card-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .what-to-expect {
+    flex-wrap: wrap;
+  }
+
+  .about-me-content {
+    width: 80%;
+  }
+
+  .form-background-section {
+    margin-left: 70px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+
+  .service-card-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  .owner-image-container {
+    left: -20px;
+  }
+
+  .about-me-text {
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  .main-form {
+    width: 90%;
+  }
+  
+  .contact-flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form-container {
+    background: linear-gradient(to top, rgba(255, 115, 1, 0.90) 50%, var(--light-background) 50%);
+  }
+
+  .contact-flex {
+    flex-direction: column;
+    margin-bottom: 800px;
+  }
+
+  .main-form {
+    width: 55%;
+    margin: auto;
+  }
+
+  .contact-image-wrapper {
+    justify-content: center;
+    left: 0px;
+    top: 450px;
+  }
+
+  .social-header {
+   left: 200px;
+   top: -190px;
+  }
+
+  .social-side-icon {
+    position: absolute;
+    left: 180px;
+    bottom: 0;
+  }
+  
+  .fb-icon {
+    position: absolute;
+    left: 250px
+  }
+  
+  .yt-icon {
+    position: absolute;
+    left: 600px;
+  }
+  
+  .insta-icon {
+    position: absolute;
+    left: 600px;
+    top: 50px;
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .nav-wrapper {
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    margin-bottom: 30px;
+  }
+
+  .nav-list {
+    margin-bottom: 30px;
+  }
+ 
+  .hero-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-text {
+    width: 55%;
+  }
+
+  .hero-image {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .hero-image img {
+    width: 80%;
+    border-radius: 4px;
+  }
+  }
+
+  @media screen and (max-width: 750px) {
+
+    [aria-controls="navbarDropdown"] {
+      display: block;
+    }
+  
+    [aria-expanded="false"] ~ ul li {
+      display: none;
+    }
+  
+    [aria-expanded="true"] ~ ul {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: var(--size-50);
+      border-radius: 20px;
+      margin: var(--size-16);
+      padding: var(--size-20);
+      z-index: 100;
+      text-align: right;
+      box-shadow: 0px 0px var(--size-20) rgba(52, 49, 75, 0.1);
+      background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.70));
+    }
+  
+    [aria-expanded="true"] ~ ul li a {
+      margin-right: var(--size-20);
+      color: var(--font-color-dark);
+    }
+
+    .form-background-section {
+      margin-left: 0px;
+    }
+  
+    .yt-icon {
+      left: 500px;
+    }
+    
+    .insta-icon {
+      left: 500px;
+      top: 50px;
+    }
+
+    .social-side-icon {
+      left: 100px;
+      bottom: 0;
+    }
+    
+    .fb-icon {
+      left: 150px
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .yt-icon {
+      left: 430px;
+    }
+    
+    .insta-icon {
+      left: 430px;
+      top: 50px;
+    }
+
+    .intro-pic .horse-orange img {
+      width: 25rem;
+      height: 17rem;
+    }
+
+    .intro-text-wrapper {
+      width: 25rem;
+    }
+
+    .main-form {
+      width: 70%;
+    }
+
+    .footer-container {
+      justify-content: center;
+    }
+
+    .img-footer {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .what-to-expect {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .arrow-container .fa-angle-right {
+      display: none;
+    }
+
+    .arrow-container .fa-angle-down {
+      display: inline-block;
+    }
+
+    .about-graphic {
+      left: 0px;
+    }
+
+    .about-graphic img {
+      width: 40%;
+    }
+
+    .about-graphic-2 {
+      left: 0px;
+    }
+
+    .yt-icon {
+      left: 300px;
+    }
+    
+    .insta-icon {
+      left: 330px;
+      top: 30px;
+    }
+
+    .social-header {
+      left: 130px;
+      top: -190px;
+     }
+
+     .hero-text {
+       width: 80%;
+     }
+
+     .contact-flex .submit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+     }
+  }
+
+  @media screen and (max-width: 430px) {
+
+   
+
+    .intro-section {
+      padding-top: 40px;
+    }
+
+    .intro-text-wrapper {
+      width: 70%;
+      margin-top: 100px;
+    }
+
+    .intro-pic .horse-orange img {
+      width: 20rem;
+    }
+
+    .owner-image-container {
+      top: 250px;
+      left: 30px;
+      width: 70%;
+    }
+
+    .card {
+      width: 80%;
+    }
+
+    .sub-title span hr {
+      width: 30px;
+    }
+
+    .about-text-container span hr {
+      width: 30px;
+    }
+
+    .about-text-container {
+      padding: 0;
+    }
+
+    .skills-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .insta-icon {
+      left: 270px;
+      top: 30px;
+    }
+
+    .yt-icon {
+      left: 250px;
+    }
+
+    .social-side-icon {
+      left: 50px;
+    }
+
+    .about-graphic {
+      top: -60px;
+    }
+
+    .about-graphic-2 {
+      left: 50px;
+    }
+
+    .info-footer {
+      flex-wrap: wrap;
+      padding-left: 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 350px) {
+
+    .title {
+      width: 60%;
+    }
+
+    .sub-title span {
+      display: none;
+    }
+
+    .intro-pic .horse-orange {
+      display: flex;
+    }
+
+    .intro-pic .horse-orange img {
+      width: 70%;
+      height: 67%;
+      margin: auto;
+    }
+
+    .owner-image-container {
+      top: 200px;
+      left: 50px;
+      width: 70%;
+    }
+
+    .about-me-text {
+      width: 100%;
+    }
+
+    .about-text-container {
+      width: 86%;
+    }
+
+    .skills-buttons {
+      gap: 5px;
+    }
+
+    .social-header {
+      left: 70px;
+      width: 15rem;
+    }
+
+    .yt-icon {
+      left: 150px;
+    }
+
+    .fb-icon {
+      left: 50px
+    }
+
+    .insta-icon {
+      left: 200px;
+      top: 10px;
+    }
+
+ 
+  }
+
+
+
+

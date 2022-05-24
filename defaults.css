@@ -1,0 +1,134 @@
+:root {
+  --white: #FFFF;
+  --black: #181A18;
+  --font-color-base: #1D1F1E;
+  --dark-background-blue: #D1E1E0;
+  --light-background: #fcfcfc;
+  --accent-orange: #FF7301;
+  --accent-pink: #FDB5A5;
+  --accent-yellow: #F1CF9F;
+  --accent-blue: #A2B7D6;
+
+  --size-5: 0.313rem;
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem; 
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+  --size-200: 12.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: var(--size-14);
+  letter-spacing: 0;
+  color: var(--font-color-base);
+  background-color: var(--light-background);
+}
+
+*,
+::after, 
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li a:hover {
+  color: var(--accent-orange);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color-base);
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  padding: .75rem 1.3rem .65rem 1.3rem;
+  border-radius: 1.25rem;
+  transition: ease-in-out 0.3s;
+  color: var(--accent-blue);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.btn:hover {
+  background-color: var(--light-background);
+  color: var(--accent-orange);
+}
+
+.container {
+  width: 100%;
+  margin: var(--size-12) auto;
+}
+
+.container-hero {
+  width: 100%;
+  margin: var(--size-12) auto;
+}
+
+.nav-container {
+  width: 100%;
+  margin: var(--size-12) auto;
+}
+
+/* Headers */ 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--accent-orange);
+}
+
+.sub-title span hr {
+  width: 70px;
+  font-size: var(--size-12);
+  border: 1px solid var(--accent-orange);
+}
+
+.sub-title h3 {
+  font-weight: 700;
+}
+
+.title h2 {
+  font-size: var(--size-30);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
