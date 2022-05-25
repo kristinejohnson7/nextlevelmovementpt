@@ -139,8 +139,12 @@
 .hero-text p, a {
   margin-top: var(--size-20);
   font-weight: 500;
-  font-size: var(--size-16);
+  font-size: var(--size-18);
   line-height: 1.8;
+}
+
+.hero-text a {
+  width: 45%;
 }
 
 .hero-text a:hover {
@@ -309,6 +313,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+}
+
+.pt-wrapper p {
+  margin-bottom: 113px;
 }
 
 .service-text h3 {
