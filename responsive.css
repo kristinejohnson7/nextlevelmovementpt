@@ -265,6 +265,11 @@
   }
 
   @media screen and (max-width: 550px) {
+
+    .hero-text {
+      width: 100%;
+    }
+
     .hero-image {
       max-height: 15rem;
     }
@@ -317,10 +322,6 @@
       top: -190px;
      }
 
-     .hero-text {
-       width: 80%;
-     }
-
      .contact-flex .submit-btn {
       display: flex;
       justify-content: center;
@@ -333,7 +334,6 @@
     .hero-text {
       text-align: center;
       justify-content: center;
-      width: 85%;
     }
    
     .intro-section {
