@@ -59,6 +59,15 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .nav-list {
+    font-size: var(--size-14);
+    margin-top: 1px;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+  }
+
   .form-container {
     background: linear-gradient(to top, rgba(255, 115, 1, 0.90) 50%, var(--light-background) 50%);
   }
@@ -110,31 +119,74 @@
 
 @media screen and (max-width: 850px) {
 
-  .nav-wrapper {
-    flex-direction: column;
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul li {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    border-radius: 20px;
+    margin: var(--size-16);
+    padding: var(--size-20);
+    z-index: 100;
+    text-align: right;
+    box-shadow: 0px 0px var(--size-20) rgba(52, 49, 75, 0.1);
+    background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.70));
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
   }
 
   .nav-logo {
-    margin-bottom: 30px;
+    width: 118px;
+    height: 88px;
   }
 
-  .nav-list {
-    margin-bottom: 30px;
+  .nav-logo img {
+    width: 100%;
+    height: initial;
   }
  
   .hero-wrapper {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 87px;
   }
 
   .hero-text {
-    width: 55%;
+    width: 65%;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero-text h1 {
+    font-size: var(--size-20);
+  }
+
+  .hero-text a {
+    font-size: var(--size-12);
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-image {
     display:flex;
     justify-content: center;
     padding-bottom: 40px;
+    max-height: 20rem;
   }
 
   .hero-image img {
@@ -145,32 +197,16 @@
 
   @media screen and (max-width: 750px) {
 
-    [aria-controls="navbarDropdown"] {
-      display: block;
+    .hero-text {
+      gap: 0;
     }
-  
-    [aria-expanded="false"] ~ ul li {
-      display: none;
-    }
-  
-    [aria-expanded="true"] ~ ul {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: var(--size-50);
-      border-radius: 20px;
-      margin: var(--size-16);
-      padding: var(--size-20);
-      z-index: 100;
-      text-align: right;
-      box-shadow: 0px 0px var(--size-20) rgba(52, 49, 75, 0.1);
-      background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.70));
-    }
-  
-    [aria-expanded="true"] ~ ul li a {
-      margin-right: var(--size-20);
-      color: var(--font-color-dark);
-    }
+
+    /* .hero-text a {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
 
     .form-background-section {
       margin-left: 0px;
@@ -215,7 +251,7 @@
     }
 
     .main-form {
-      width: 70%;
+      width: 65%;
     }
 
     .footer-container {
@@ -229,6 +265,14 @@
   }
 
   @media screen and (max-width: 550px) {
+    .hero-image {
+      max-height: 15rem;
+    }
+
+    .services {
+      padding-top: 1px;
+    }
+
     .what-to-expect {
       flex-direction: column;
       align-items: center;
@@ -254,8 +298,13 @@
       left: 0px;
     }
 
+    .main-form {
+      width: 75%;
+    }
+
     .yt-icon {
       left: 300px;
+      top: 235px;
     }
     
     .insta-icon {
@@ -281,9 +330,12 @@
   }
 
   @media screen and (max-width: 430px) {
-
+    .hero-text {
+      text-align: center;
+      justify-content: center;
+      width: 85%;
+    }
    
-
     .intro-section {
       padding-top: 40px;
     }
@@ -329,8 +381,30 @@
       top: 30px;
     }
 
+    .form-background-section {
+      padding-bottom: 235px;
+    }
+
+    .contact-flex {
+      margin-bottom: 280px;
+    }
+
+    .title {
+      margin-top: 35px;
+      margin-bottom: 16px;
+    }
+
+    .contact-image-wrapper {
+      top: 81px;
+    }
+
+    .main-form {
+      width: 88%;
+    }
+
     .yt-icon {
       left: 250px;
+      top: 216px;
     }
 
     .social-side-icon {
@@ -350,6 +424,16 @@
       padding-left: 15px;
     }
 
+    .footer-background {
+      padding-top: 18px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+    .hero-text a {
+      width: 55%;
+    }
   }
 
   @media screen and (max-width: 350px) {
