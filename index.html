@@ -25,6 +25,7 @@
       src="https://kit.fontawesome.com/01dfe11cf5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf05pUgAAAAALnwDLfl3FEU8-sAUW50EbBXqMke"></script>
   </head>
   <body>
     <div class="navbar">
@@ -460,6 +461,11 @@
               method="POST"
               target="_blank"
             >
+              <input
+                type="hidden"
+                id="captchaResponse"
+                name="g-recaptcha-response"
+              />
               <label for="name">Name</label>
               <input id="name" type="text" name="name" required />
               <label for="email">Email</label>
@@ -540,5 +546,16 @@
     </footer>
     <script src="index.js"></script>
     <script src="carousel.js"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6Lf05pUgAAAAALnwDLfl3FEU8-sAUW50EbBXqMke", {
+            action: "homepage",
+          })
+          .then(function (token) {
+            document.getElementById("captchaResponse").value = token;
+          });
+      });
+    </script>
   </body>
 </html>
