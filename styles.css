@@ -35,7 +35,7 @@
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 0.8s all ease;
+  transition: 0.4s all ease;
 }
 
 .reveal.active {
